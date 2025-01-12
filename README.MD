@@ -11,11 +11,15 @@ En este proyecto utilizo las siguientes herramientas:
 * Json-Server
 * Modulos JS
 
-Utilize railway para alojar db.json y simular los datos en tiempo real
+Utilizo railway para alojar db.json y simular los datos en tiempo real
 
 ## Uso
 
 ALURAFLIX es un app web para ver videos respecto a Alura, lo cual los usuarios pueden escoger en tipo de categoria que quisieran ver, por otra parte
 pueden crear videos y categorias, eliminar o actualizar, lo recomendado es que para crear un video es que sea desde un pc o laptop, la interacción es 
 facil para los usuarios.
+
+
+ Información detallada para revisión del Challenge
+ ATTE: Ruben Rubio 
 
