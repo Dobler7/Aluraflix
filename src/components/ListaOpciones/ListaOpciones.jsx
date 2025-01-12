@@ -1,4 +1,4 @@
-import { ContentInput,Input,Span } from "../UI";
+import { ContentInput, Input, Span } from "../UI";
 import styled from "styled-components";
 
 const Select = styled.select`
@@ -15,19 +15,19 @@ const Select = styled.select`
 `
 
 
-const ListaOpciones =(props)=>{
-    const {categorias,ActualizarCategoria,valor}= props;
-    const CambioValor=(e)=>{
+const ListaOpciones = (props) => {
+    const { categorias, ActualizarCategoria, valor } = props;
+    const CambioValor = (e) => {
         ActualizarCategoria(e.target.value)
     }
-    return(
+    return (
         <ContentInput>
-            <Select  onChange={CambioValor}>
-                {valor?  <option value={valor}>{valor}</option >: <option value="" defaultValue="" hidden>Escoja una categoria</option> }
-               
+            <Select onChange={CambioValor}>
+                {valor ? <option value={valor}>{valor}</option > : <option value="" defaultValue="" hidden>Escoja una categoria</option>}
+
                 {
-                    categorias.map((titulo)=>{
-                        if(titulo != valor)
+                    categorias.map((titulo) => {
+                        if (titulo != valor)
                             return <option key={titulo}>{titulo}</option>
                     })
                 }
